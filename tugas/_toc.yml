@@ -1,0 +1,20 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+  - file: sistem_linear
+    sections:
+      - file: sistem_linear/penyelesaian_sistem_linear
+      - file: sistem_linear/Menggambar-Bidang-pada-Ruang-Tiga-Dimensi
+  - file: aljabar
+    sections:
+      - file: aljabar_sub/operasi_matrix
+      - file: aljabar_sub/matrix_tranpose
+      - file: aljabar_sub/matrix_elementer
+      - file: aljabar_sub/matrix_inverse
+  - file: determinan
+    sections:
+      - file: determinan/formula_determinan
+  - file: eign_value_eign_vector
