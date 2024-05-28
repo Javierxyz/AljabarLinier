@@ -1,6 +1,7 @@
-# Selamat Datang Di Jupyter-book Aljabar Linier! 
+# Mata Kuliah Komputasi Aljabar Linier!
 
-Halo, Selamat Datang Di Jupyter-book Saya, Sebelumnya Perkenalkan Saya Muhammad Rafi Lazuardi dan, [23-060](https://github.com/23-060) adalah akun GitHub saya
+Nama : Muhammad Javier Akmal Hadi <br>
+NIM : 230411100192
 
 ## Membuat Web Statis Menggunakan Jupyter-book
 
@@ -13,13 +14,14 @@ Halo, Selamat Datang Di Jupyter-book Saya, Sebelumnya Perkenalkan Saya Muhammad 
 7. Edit bagian yang ingin di edit
 8. Build Foldernya menggunakan command "jupyter-book build (nama folder)"
 9. pindah Folder HTML nya di luar folder tugas
-8. Commit & Sync (jangan lupa diberi pesan pada commit nya)
-9. Pindah ke Repository dan ke Setting
-10. Pilih Bagian Pages
-11. Ganti Branch ke Branch yg kita gunakan tadi
-12. Tunggu Proses Deploy nya selesai
+10. Commit & Sync (jangan lupa diberi pesan pada commit nya)
+11. Pindah ke Repository dan ke Setting
+12. Pilih Bagian Pages
+13. Ganti Branch ke Branch yg kita gunakan tadi
+14. Tunggu Proses Deploy nya selesai
 
-[Link To Youtube](https://www.youtube.com/watch?v=iWBcHd-rWlo)
+[Link To Youtube](https://youtu.be/7Tkuhcq-9G0)
 
 ```{tableofcontents}
+
 ```
