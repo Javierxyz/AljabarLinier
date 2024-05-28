@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=384b581d" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=87e54e7c" />
   
@@ -189,7 +189,8 @@
 <li class="toctree-l2"><a class="reference internal" href="aljabar_sub/matrix_inverse.html">Matrix Inverse</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="determinan.html">Determinan</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+<li class="toctree-l1 has-children"><a class="reference internal" href="determinan.html">Determinan</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="determinan/kofaktor.html">Ekspansi Kofaktor</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="eign_value_eign_vector.html">Eigen Value Eigen Vector</a></li>
@@ -389,6 +390,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-transformasi-linear">Contoh Transformasi linear</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-refleksi">Matriks refleksi</a></li>
 </ul>
             </nav>
@@ -403,15 +405,12 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="transformasi-linear">
 <h1>Transformasi Linear<a class="headerlink" href="#transformasi-linear" title="Link to this heading">#</a></h1>
-<p>Transformasi linear, adalah fungsi matematis yang memetakan vektor dari satu ruang ke ruang lainnya, mempertahankan struktur aljabar.</p>
-<p>Cara menentukan transformasi linear?<br />
-<span class="math notranslate nohighlight">\(\qquad\)</span>    1. Pusat titik tidak berubah<br />
-<span class="math notranslate nohighlight">\(\qquad\)</span>    2. Garis lurus ditetapkan sebagai garis lurus</p>
-<p>1.$<span class="math notranslate nohighlight">\( T (u + v) = T(u) + T(v)\)</span><span class="math notranslate nohighlight">\(  
-2.\)</span><span class="math notranslate nohighlight">\( T(au) = a T(u)\)</span>$</p>
+<p>Transformasi linear adalah operasi matematis yang memetakan vektor dari satu ruang vektor ke ruang vektor lain dengan cara yang mempertahankan operasi penjumlahan vektor dan perkalian skalar. Transformasi ini sering direpresentasikan dalam bentuk matriks. Berikut adalah beberapa rumus dan konsep dasar yang berkaitan dengan transformasi linear:</p>
+<p>sifat sifat transformasi linear: <br>
+<span class="math notranslate nohighlight">\(\qquad 1. T (u + v) = T(u) + T(v)\)</span><br />
+<span class="math notranslate nohighlight">\(\qquad 2. T(au) = a T(u)\)</span><br />
 <br>
-<br>
-<p><span class="math notranslate nohighlight">\(
+<span class="math notranslate nohighlight">\(
 T\left[
     \begin{array}{c} 
         x \\ 
@@ -435,11 +434,15 @@ T\left[
 \right ] 
 \in\mathbb{R}^3\nonumber
 \)</span></p>
+<section id="contoh-transformasi-linear">
+<h2>Contoh Transformasi linear<a class="headerlink" href="#contoh-transformasi-linear" title="Link to this heading">#</a></h2>
 <p><span class="math notranslate nohighlight">\(
     u = (2, 3, 1) \\
     v = (1, 2, 3) \\
-\)</span></p>
-<p><strong>1.</strong> <span class="math notranslate nohighlight">\(T (u + v) = T(u) + T(v)\)</span></p>
+\)</span><br />
+<br>
+<strong>1.</strong> <span class="math notranslate nohighlight">\(T (u + v) = T(u) + T(v)\)</span>
+<br> <br> <br></p>
 <p><span class="math notranslate nohighlight">\(
     T(u + v) = 
     \begin{bmatrix}
@@ -469,9 +472,12 @@ T\left[
         -1
     \end{bmatrix}
 \)</span></p>
+<br>
 <p><span class="math notranslate nohighlight">\(T(u + v) \space sama \space dengan \space T(u) + T(v)\)</span></p>
-<p><strong>2</strong>. <span class="math notranslate nohighlight">\(T(au) = a T(u)\)</span></p>
-<p>a = 2
+<p><br> <br> <br></p>
+<p><strong>2</strong>. <span class="math notranslate nohighlight">\(T(au) = a T(u)\)</span>
+<br> <br>
+a = 2
 <span class="math notranslate nohighlight">\(
     T(au) =
     \begin{bmatrix}
@@ -502,9 +508,12 @@ T\left[
         10 \\
         2
     \end{bmatrix}
-\)</span></p>
-<p><span class="math notranslate nohighlight">\(T(au) \space sama \space dengan \space aT(v)\)</span></p>
-<p>Jadi T merupakan transformasi linear</p>
+\)</span>
+<br> <br></p>
+<p><span class="math notranslate nohighlight">\(T(au) \space sama \space dengan \space aT(v)\)</span>
+<br></p>
+<p>Jadi T merupakan transformasi linear
+<br> <br></p>
 <p><span class="math notranslate nohighlight">\(
 T
 \left(
@@ -591,6 +600,7 @@ A = \begin{bmatrix}
 \end{bmatrix}
 \)</span></p>
 <p>jika matrix <span class="math notranslate nohighlight">\(A\)</span> dikalikan dengan dengan <span class="math notranslate nohighlight">\(v\)</span> sama dengan <span class="math notranslate nohighlight">\(T(v)\)</span></p>
+</section>
 <section id="matriks-refleksi">
 <h2>Matriks refleksi<a class="headerlink" href="#matriks-refleksi" title="Link to this heading">#</a></h2>
 <p>Matriks refleksi adalah jenis khusus dari transformasi linear dalam geometri yang menghasilkan refleksi (pemantulan) terhadap suatu garis, bidang, atau hiperbidang tertentu. Dalam ruang dua dimensi, matriks refleksi sering kali merepresentasikan pemantulan terhadap sumbu x, sumbu y, atau garis dengan kemiringan tertentu.</p>
@@ -726,6 +736,7 @@ A = \begin{bmatrix}
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-transformasi-linear">Contoh Transformasi linear</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-refleksi">Matriks refleksi</a></li>
 </ul>
   </nav></div>

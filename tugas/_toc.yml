@@ -16,6 +16,6 @@ chapters:
       - file: aljabar_sub/matrix_inverse
   - file: determinan
     sections:
-      - file: determinan/formula_determinan
+      - file: determinan/kofaktor
   - file: eign_value_eign_vector
   - file: transformasi_linear
